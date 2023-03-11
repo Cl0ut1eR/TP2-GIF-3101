@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.about.ProfileFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/slider2Layout">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="0dp"
+            android:layout_height="0.5dp"
+            android:background="#8F292929"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/slider1Layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <SeekBar
+                android:id="@+id/seekBar1"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:max="9"
+                android:min="1"
+                android:progress="1"
+                android:thumb="@drawable/baseline_circle_24"
+                android:thumbTint="#FF0000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/lblSlider1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="Valeur :"
+                app:layout_constraintStart_toStartOf="@+id/seekBar1"
+                app:layout_constraintTop_toBottomOf="@+id/seekBar1" />
+
+            <TextView
+                android:id="@+id/lblValueSlider1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="1"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/lblSlider1"
+                app:layout_constraintTop_toTopOf="@+id/lblSlider1" />
+
+            <TextView
+                android:id="@+id/lblmin1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textColor="#FF0000"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/seekBar1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/seekBar1"
+                tools:text="1" />
+
+            <TextView
+                android:id="@+id/lblmax1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9"
+                android:textColor="#FF0000"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/seekBar1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/seekBar1" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/slider2Layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/slider1Layout"
+            app:layout_constraintStart_toStartOf="@+id/slider1Layout"
+            app:layout_constraintTop_toBottomOf="@+id/slider1Layout">
+
+            <SeekBar
+                android:id="@+id/seekBar2"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:max="12"
+                android:min="2"
+                android:progress="2"
+                android:thumb="@drawable/baseline_circle_24"
+                android:thumbTint="#FF0000"
+                app:layout_constraintEnd_toEndOf="@+id/lblmax2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/lblSlider2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="Valeur :"
+                app:layout_constraintStart_toStartOf="@+id/seekBar2"
+                app:layout_constraintTop_toBottomOf="@+id/seekBar2" />
+
+            <TextView
+                android:id="@+id/lblValueSlider2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="2"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/lblSlider2"
+                app:layout_constraintTop_toTopOf="@+id/lblSlider2" />
+
+            <TextView
+                android:id="@+id/lblmin2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:textColor="#FF0000"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/seekBar2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/seekBar2"
+                tools:text="2" />
+
+            <TextView
+                android:id="@+id/lblmax2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12"
+                android:textColor="#FF0000"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/seekBar2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/seekBar2" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/slider3Layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="@+id/slider2Layout"
+        app:layout_constraintStart_toStartOf="@+id/slider2Layout"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+        <SeekBar
+            android:id="@+id/seekBar3"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:max="108"
+            android:min="2"
+            android:progress="2"
+            android:thumb="@drawable/baseline_circle_24"
+            android:thumbTint="#878787"
+            app:layout_constraintEnd_toEndOf="@+id/lblmax3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/lblSlider3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Valeur :"
+            app:layout_constraintStart_toStartOf="@+id/seekBar3"
+            app:layout_constraintTop_toBottomOf="@+id/seekBar3" />
+
+        <TextView
+            android:id="@+id/lblValueSlider3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="2"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/lblSlider3"
+            app:layout_constraintTop_toTopOf="@+id/lblSlider3" />
+
+        <TextView
+            android:id="@+id/lblmin3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/seekBar3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/seekBar3"
+            tools:text="1" />
+
+        <TextView
+            android:id="@+id/lblmax3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="108"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/seekBar3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/seekBar3" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_InternetStatus"
+            android:icon="@drawable/baseline_network_wifi_3_bar_24"
+            android:title="@string/menu_internet_status" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/baseline_info_24"
+            android:title="@string/menu_about" />
+        <item
+            android:id="@+id/nav_abacus"
+            android:icon="@drawable/baseline_add_box_24"
+            android:title="@string/menu_abacus" />
+    </group>
+    <group android:id="@+id/UserGrp">
+        <item
+            android:id="@+id/UserGrpLbl"
+            android:enabled="false"
+            android:title="@string/menu_user_grp_lbl"
+            app:showAsAction="never"/>
+        <item
+            android:id="@+id/nav_form"
+            android:icon="@drawable/baseline_edit_24"
+            android:title="@string/menu_form" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/baseline_person_24"
+            android:title="Mon profil" />
+    </group>
+</menu>
